@@ -76,6 +76,14 @@ This workshop serves 2 purposes:
 
 ## Setup
 
+### Sign up for accounts
+
+1. Free [Sauce account](https://saucelabs.com/sign-up)
+2. Request [Demo Secreener account](https://saucelabs.com/demo-request-vt). **!You must request this at least a week before the workshop as it's a manual process to add users.** 
+
+### Local environment setup
+
+
 ```java
 git clone https://github.com/saucelabs-training/automation-best-practices-java
 ```
