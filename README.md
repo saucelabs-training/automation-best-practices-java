@@ -14,15 +14,13 @@ This workshop serves 2 purposes:
 1. For me to give back to the testing world and help us all upskill 🚀
 2. For us all to help a greater cause than ourselves 🌍
 
-### [About Black Girls CODE](https://www.blackgirlscode.com/about-us/)
+### [ABOUT CHARITY]()
 
-We build pathways for young women of color to embrace the current tech marketplace as builders and creators by introducing them to skills in computer programming and technology.
 
-Radical action is needed if we are to close the opportunity gap for Black women and girls. We lead a global movement to establish equal representation in the tech sector. Black Girls CODE is devoted to showing the world that Black girls can code and do so much more. Together, we are creating stronger economies and more equitable societies—ultimately realizing the true potential of democracy through diversity and inclusion.
 
 👇👇👇
 
-[Please donate whatever you feel appropriate.](https://www.gofundme.com/f/testing-for-charity) 100% of the donations go to the cause.
+[Please donate whatever you feel appropriate.](https://www.gofundme.com/f/testing-for-good-codeorg) 100% of the donations go to the cause.
 
 ## 🧠You will learn
 
@@ -81,3 +79,9 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 ```java
 git clone https://github.com/saucelabs-training/automation-best-practices-java
 ```
+
+### Add static code analysis
+
+* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
+* Adding and analyzing takes a bit
+* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
