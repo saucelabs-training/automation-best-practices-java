@@ -26,17 +26,11 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## 🧠You will learn
 
-✅how to test a web application using different types of tests
-
-✅functional ui tests with Cypress
-
-✅visual e2e tests
-
-✅visual cross-browser tests
-
-✅CICD with Github Actions
-
-✅component testing
+* Create a framework for doing comprehensive web testing
+* Create functional browser tests using Selenium
+* Code visual e2e tests using Screener
+* Run in massive parallel (100s of tests in < 5 min)
+* Run in a CI pipeline
 
 ## 🔧Technologies you will use
 
@@ -50,11 +44,7 @@ Radical action is needed if we are to close the opportunity gap for Black women 
 
 ## Table Of Contents
 
-* [E2E UI testing w/ Cypress](./my-react-app/docs/E2E-TESTS.md)
-* [CICD](./my-react-app/docs/CICD.md)
-* [Visual e2e tesing](./my-react-app/docs/VISUAL.md)
-* [Component testing](./my-react-app/docs/COMPONENT-TESTS.md)
-* [Conclusions](./my-react-app/docs/CONCLUSIONS.md)
+* 
 
 ## Key
 
