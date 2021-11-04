@@ -94,12 +94,12 @@ git clone URL_OF_YOUR_FORK
 
 Navigate to the directory of where you cloned your repo
 
-`cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
+`cd YOUR_FORK_DIR/automation-best-practices/workshop`
 
 Run sanity tests
 
 ```java
-mvn test -Dtest=SanityTests -X
+mvn test -Dtest=SanityTest -X
 ```
 
 <br/>
