@@ -32,13 +32,10 @@ This workshop serves 2 purposes:
 
 ## 🔧Technologies you will use
 
-1. ReactJS
-2. Cypress
-3. WebdriverIO
-4. Screener.io
+1. 
 5. Sauce Labs
 6. Github Actions
-7. React Testing Library
+7. 
 
 ## Table Of Contents
 
@@ -63,7 +60,7 @@ This workshop serves 2 purposes:
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
 - 📫 Follow me for testing and dev training
-  - [JS Testing Newsletter](https://ultimateqa.ck.page/js-testing-tips)
+  - [Java Testing Newsletter]()
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/Nikolay_A00)
