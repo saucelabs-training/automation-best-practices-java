@@ -44,6 +44,18 @@ This workshop serves 2 purposes:
 * [Gitpod environment setup (alternative approach to local)](#gitpod-setup)
 * 
 
+## Requirements
+
+**This is NOT a beginners course and you will not learn Java testing fundamentals here. However, you will learn a number of amazing skills, techniques, and tools to help you test web applications**
+
+* At least 1 year of Java programming
+* Deep understanding of Selenium WebDriver
+* Deep understanding of OOP
+* Java 8 installed
+* Java IDE installed
+* Git installed
+* Maven installed
+
 ## Key
 
 💡 this is a tip
