@@ -1,8 +1,8 @@
 # Commands to start on workspace startup
 tasks:
-  - init: |
+  - before: |
       cd workshop
-      clear
+    init: mvn clean install -DskipTests=true
     command: echo 'Ready to test!'
 
 vscode:
