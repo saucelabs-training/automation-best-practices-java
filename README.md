@@ -39,6 +39,9 @@ This workshop serves 2 purposes:
 
 ## Table Of Contents
 
+* Introduction to workshop
+* [Local environment setup](#Local-environment-setup)
+* [Gitpod environment setup (alternative approach to local)]((#gitpod-setup)
 * 
 
 ## Key
@@ -125,6 +128,11 @@ mvn test -Dtest=SanityTest -X
   </details>
 
 <br/><br/>
+
+> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+
+
+### Gitpod setup
 
 ### Add static code analysis
 
