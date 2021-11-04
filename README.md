@@ -147,7 +147,7 @@ Open forked repo in Gitpod.io
       > gitpod.io/#https://github.com/{USERNAME}/automation-best-practices-java
    
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
-5. Once the development environment is loaded, run the following commands to set your `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY`:
+5. Once the development environment is loaded and you see 'Ready to test!', run the following commands to set your `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY`:
 
 ```bash
 eval $(gp env -e SAUCE_USERNAME=<sauce_username>)

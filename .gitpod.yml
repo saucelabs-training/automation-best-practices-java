@@ -1,4 +1,3 @@
-# Commands to start on workspace startup
 tasks:
   - before: |
       cd workshop
