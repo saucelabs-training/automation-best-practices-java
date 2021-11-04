@@ -68,7 +68,7 @@ This workshop serves 2 purposes:
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/Nikolay_A00)
 
-## Your TA: Josh Grant
+## Your TA: Eyal
 
 <img src="./../graphics/josh-grant.jpeg" alt="josh" width="150"/>
 
@@ -83,13 +83,56 @@ This workshop serves 2 purposes:
 
 ### Local environment setup
 
+Fork then clone the repo
+
+1. Sign up for a free [Github account](https://github.com/)
+2. Fork this respository
+ * Make sure you are logged into Github
+ * click the Fork in the upper right of the Github.
+3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
+
+```bash
+git clone URL_OF_YOUR_FORK
+```
+
+Navigate to the directory of where you cloned your repo
+
+`cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
+
+Run sanity tests
 
 ```java
-git clone https://github.com/saucelabs-training/automation-best-practices-java
+mvn test -Dtest=SanityTests -X
 ```
+
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see an example console output.
+    </summary>
+
+        
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.305 sec
+
+        Results :
+
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+        [INFO] ------------------------------------------------------------------------
+        [INFO] BUILD SUCCESS
+        [INFO] ------------------------------------------------------------------------
+        [INFO] Total time:  56.063 s
+        [INFO] Finished at: 2021-11-03T16:03:20-04:00
+        [INFO] ------------------------------------------------------------------------
+        
+  </details>
+
+<br/><br/>
 
 ### Add static code analysis
 
 * Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
 * Adding and analyzing takes a bit
 * [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
+
+### ✅👏Environment setup is complete
