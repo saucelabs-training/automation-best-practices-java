@@ -1,4 +1,10 @@
 # Commands to start on workspace startup
 tasks:
-  - init: yarn install
-    command: yarn build
+  - init: |
+      cd workshop
+      mvn clean install -DskipTests=true
+    command: echo 'Ready to test!'
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-test

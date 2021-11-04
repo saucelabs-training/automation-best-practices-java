@@ -2,10 +2,7 @@ package com.saucedemo.exercises;
 
 import com.saucelabs.saucebindings.SauceSession;
 import com.saucelabs.saucebindings.junit4.SauceBaseTest;
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.TestWatcher;
-import org.junit.runner.Description;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
@@ -15,7 +12,8 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 public class SanityTest extends SauceBaseTest {
 
@@ -23,7 +21,6 @@ public class SanityTest extends SauceBaseTest {
     public void functionalWorks() {
         WebDriver driver = new SauceSession().start();
         assertNotNull("Register for your free sauce account https://saucelabs.com/sign-up", driver);
-        driver.quit();
     }
 
     @Test
@@ -54,7 +51,5 @@ public class SanityTest extends SauceBaseTest {
         driver.executeScript("/*@visual.snapshot*/", "Home");
         Map<String, Object> response = (Map<String, Object>) driver.executeScript("/*@visual.end*/");
         assertNull(response.get("message"));
-
-        driver.quit();
     }
 }

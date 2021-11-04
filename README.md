@@ -127,6 +127,17 @@ mvn test -Dtest=SanityTest -X
         
   </details>
 
+</br>
+
+### Gitpod Environment Setup
+
+Open forked repo in Gitpod.io
+
+1. Sign up for a free [Github account](https://github.com/)
+2. Fork this repository
+   * Make sure you are logged into Github
+   * Click the 
+
 <br/><br/>
 
 > If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
