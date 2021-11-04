@@ -129,21 +129,62 @@ mvn test -Dtest=SanityTest -X
 
 </br>
 
-### Gitpod Environment Setup
+> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+
+
+### Gitpod setup
 
 Open forked repo in Gitpod.io
 
 1. Sign up for a free [Github account](https://github.com/)
 2. Fork this repository
-   * Make sure you are logged into Github
-   * Click the 
+    * Make sure you are logged into Github
+    * Click the fork in the upper right of Github
+    * Select your username as the location to fork the repo
+3. In the browser address bar, prepend the Github url (`https://github.com/<username>/automation-best-practices-java`) with `https://gitpod.io/#`
+    * The resulting url should look as follows:
+   
+      > gitpod.io/#https://github.com/<username>/automation-best-practices-java
+   
+4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
+5. Once the development environment is loaded, run the following commands to set your `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY`:
 
-<br/><br/>
+```bash
+eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
+eval $(gp env -e SAUCE_ACCESS_KEY=sauce_access_key>)
+```
 
-> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+> Replace <sauce_username> and <sauce_access_key> with your Sauce Labs credentials
+
+Run sanity tests
+
+```bash
+mvn test -Dtest=SanityTest -X
+```
+
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see an example console output.
+    </summary>
 
 
-### Gitpod setup
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.305 sec
+
+        Results :
+
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+        [INFO] ------------------------------------------------------------------------
+        [INFO] BUILD SUCCESS
+        [INFO] ------------------------------------------------------------------------
+        [INFO] Total time:  56.063 s
+        [INFO] Finished at: 2021-11-03T16:03:20-04:00
+        [INFO] ------------------------------------------------------------------------
+
+  </details>
+
+<br/>
 
 ### Add static code analysis
 
