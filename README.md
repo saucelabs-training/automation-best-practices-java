@@ -144,7 +144,7 @@ Open forked repo in Gitpod.io
 3. In the browser address bar, prepend the Github url (`https://github.com/<username>/automation-best-practices-java`) with `https://gitpod.io/#`
     * The resulting url should look as follows:
    
-      > gitpod.io/#https://github.com/<username>/automation-best-practices-java
+      > gitpod.io/#https://github.com/{USERNAME}/automation-best-practices-java
    
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
 5. Once the development environment is loaded, run the following commands to set your `SAUCE_USERNAME` and `SAUCE_ACCESS_KEY`:
