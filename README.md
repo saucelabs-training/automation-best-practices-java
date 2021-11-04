@@ -41,7 +41,7 @@ This workshop serves 2 purposes:
 
 * Introduction to workshop
 * [Local environment setup](#Local-environment-setup)
-* [Gitpod environment setup (alternative approach to local)]((#gitpod-setup)
+* [Gitpod environment setup (alternative approach to local)](#gitpod-setup)
 * 
 
 ## Key
