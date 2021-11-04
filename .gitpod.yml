@@ -2,7 +2,9 @@
 tasks:
   - before: |
       cd workshop
-    init: mvn clean install -DskipTests=true
+    init: |
+      mvn clean install -DskipTests=true
+      clear
     command: echo 'Ready to test!'
 
 vscode:
