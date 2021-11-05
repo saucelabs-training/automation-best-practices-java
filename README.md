@@ -205,3 +205,9 @@ mvn test -Dtest=SanityTest -X
 * [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
 
 ### ✅👏Environment setup is complete
+
+## Stay to the end and win a prize!
+
+Stay to the end and 2 lucky people can win this snazzy Back Pack
+
+
