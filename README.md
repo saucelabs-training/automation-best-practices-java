@@ -153,16 +153,16 @@ Open forked repo in Gitpod.io
     * Make sure you are logged into Github
     * Click the fork in the upper right of Github
     * Select your username as the location to fork the repo
-3. In the browser address bar, prepend the Github url (`https://github.com/<username>/automation-best-practices-java`) with `https://gitpod.io/#`
+3. In the browser address bar, prepend the Github url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
     * The resulting url should look as follows:
    
-      > https://gitpod.io/#https://github.com/{USERNAME}/automation-best-practices-java
+      > https://gitpod.io/#https://github.com/USERNAME/automation-best-practices-java
    
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
-5. Once the development environment is loaded, and you see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
+5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
 
-   - You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
-   - You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+> :warning: You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+  </br>:warning: You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
 
 ```bash
 eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
@@ -170,15 +170,7 @@ eval $(gp env -e SAUCE_ACCESS_KEY=<sauce_access_key>)
 eval $(gp env -e SCREENER_API_KEY=<screener_api_key>)
 ```
 
-<div class="panel panel-info">
-**Setting Credentials**
-{: .panel-heading}
-<div class="panel-body">
-
-Replace <sauce_username>, <sauce_access_key>, and <screener_api_key> with your credentials}
-
-</div>
-</div>
+> Replace <sauce_username>, <sauce_access_key>, and <screener_api_key> with your credentials
 
 Once you have run those 3 commands, you can run the following commands to test your environment variables:
 
