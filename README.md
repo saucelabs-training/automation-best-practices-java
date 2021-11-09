@@ -161,9 +161,8 @@ Open forked repo in Gitpod.io
 4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
 5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
 
-> :information_source: You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
-  </br>
-> :information_source: You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+- :information_source: You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+- :information_source: You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
 
 ```bash
 eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
