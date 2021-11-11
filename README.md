@@ -41,7 +41,7 @@ This workshop serves 2 purposes:
 
 * Introduction to workshop
 * [Local environment setup](#Local-environment-setup)
-* [Gitpod environment setup (alternative approach to local)](#gitpod-setup)
+  * [If you can't setup local, then use Gitpod](#gitpod-setup)
 * 
 
 ## Requirements
@@ -93,6 +93,12 @@ This workshop serves 2 purposes:
 1. Free [Sauce account](https://saucelabs.com/sign-up)
 2. Request [Demo Secreener account](https://saucelabs.com/demo-request-vt). **!You must request this at least a week before the workshop as it's a manual process to add users.** 
 
+### Get your usernames/api keys
+
+1. Save somewhere your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+2. Save somewhere your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+
+
 ### Local environment setup
 
 Fork then clone the repo
@@ -106,6 +112,10 @@ Fork then clone the repo
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
+
+Setup environment variables on your system
+* [Mac/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
+* [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
 
 Navigate to the directory of where you cloned your repo
 
@@ -146,7 +156,7 @@ mvn test -Dtest=SanityTest -X
 
 ### Gitpod setup
 
-Open forked repo in Gitpod.io
+:information_source:&nbsp; Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local Java environment.
 
 1. Sign up for a free [Github account](https://github.com/)
 2. Fork this repository
