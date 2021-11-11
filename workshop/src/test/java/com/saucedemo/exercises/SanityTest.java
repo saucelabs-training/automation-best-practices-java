@@ -12,14 +12,17 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Map;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 public class SanityTest extends SauceBaseTest {
+
     @Test
     public void functionalWorks() {
         WebDriver driver = new SauceSession().start();
         assertNotNull("Register for your free sauce account https://saucelabs.com/sign-up", driver);
     }
+
     @Test
     public void visualWorks() throws MalformedURLException {
         MutableCapabilities capabilities = new MutableCapabilities();

@@ -109,12 +109,12 @@ git clone URL_OF_YOUR_FORK
 
 Navigate to the directory of where you cloned your repo
 
-`cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
+`cd YOUR_FORK_DIR/automation-best-practices/workshop`
 
 Run sanity tests
 
 ```java
-mvn test -Dtest=SanityTests -X
+mvn test -Dtest=SanityTest -X
 ```
 
 <br/>
@@ -139,7 +139,77 @@ mvn test -Dtest=SanityTests -X
         
   </details>
 
-<br/><br/>
+</br>
+
+> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+
+
+### Gitpod setup
+
+Open forked repo in Gitpod.io
+
+1. Sign up for a free [Github account](https://github.com/)
+2. Fork this repository
+    * Make sure you are logged into Github
+    * Click the fork in the upper right of Github
+    * Select your username as the location to fork the repo
+3. In the browser address bar, prepend the Github url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
+    * The resulting url should look as follows:
+   
+      > https://gitpod.io/#https://github.com/USERNAME/automation-best-practices-java
+   
+4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
+5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
+
+:information_source:&nbsp; You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+
+:information_source:&nbsp; You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+
+```bash
+eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
+eval $(gp env -e SAUCE_ACCESS_KEY=<sauce_access_key>)
+eval $(gp env -e SCREENER_API_KEY=<screener_api_key>)
+```
+
+> Replace <sauce_username>, <sauce_access_key>, and <screener_api_key> with your credentials
+
+Once you have run those 3 commands, you can run the following commands to test your environment variables:
+
+```bash
+echo $SAUCE_USERNAME
+echo $SAUCE_ACCESS_KEY
+echo $SCREENER_API_KEY
+```
+
+Run sanity tests
+
+```bash
+mvn test -Dtest=SanityTest -X
+```
+
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see an example console output.
+    </summary>
+
+
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.305 sec
+
+        Results :
+
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+        [INFO] ------------------------------------------------------------------------
+        [INFO] BUILD SUCCESS
+        [INFO] ------------------------------------------------------------------------
+        [INFO] Total time:  56.063 s
+        [INFO] Finished at: 2021-11-03T16:03:20-04:00
+        [INFO] ------------------------------------------------------------------------
+
+  </details>
+
+<br/>
 
 > If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
 

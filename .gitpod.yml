@@ -1,0 +1,11 @@
+tasks:
+  - before: |
+      cd workshop
+    init: |
+      mvn clean install -DskipTests=true
+      clear
+    command: echo 'Ready to test!'
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-test
