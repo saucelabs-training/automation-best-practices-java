@@ -161,8 +161,10 @@ mvn test -Dtest=SanityTest -X
 
 > If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
 
+---
 
 ### Gitpod setup
+
 
 :information_source:&nbsp; Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local Java environment.
 
