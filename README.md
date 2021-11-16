@@ -151,6 +151,14 @@ mvn test -Dtest=SanityTest -X
 
 </br>
 
+### Add static code analysis
+
+* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
+* Adding and analyzing takes a bit
+* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
+
+### ✅👏Environment setup is complete if tests passed
+
 > If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
 
 
@@ -221,18 +229,8 @@ mvn test -Dtest=SanityTest -X
 
 <br/>
 
-> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
 
-
-### Gitpod setup
-
-### Add static code analysis
-
-* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
-* Adding and analyzing takes a bit
-* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
-
-### ✅👏Environment setup is complete
+### ✅👏Environment setup is complete if tests passed
 
 ## Stay to the end and win a prize!
 
