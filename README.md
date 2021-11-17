@@ -82,18 +82,18 @@ This workshop serves 2 purposes:
 
 ## Your TA: Eyal
 
-<img src="./../graphics/josh-grant.jpeg" alt="josh" width="150"/>
+<img src="./../graphics/josh-grant.jpeg" alt="eyal" width="150"/>
 
 
 
 ## Setup
 
-### Sign up for accounts
+### Sign up for account
 
 1. Free [Sauce account](https://saucelabs.com/sign-up)
 2. Request [Demo Secreener account](https://saucelabs.com/demo-request-vt). **!You must request this at least a week before the workshop as it's a manual process to add users.** 
 
-### Get your usernames/api keys
+### Get your username and api key
 
 1. Save somewhere your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
 2. Save somewhere your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
@@ -103,15 +103,16 @@ This workshop serves 2 purposes:
 
 Fork then clone the repo
 
-1. Sign up for a free [Github account](https://github.com/)
+1. Sign up for a free [GitHub account](https://github.com/)
 2. Fork this respository
- * Make sure you are logged into Github
- * click the Fork in the upper right of the Github.
+ * Make sure you are logged into GitHub
+ * Click the Fork in the upper right of the GitHub.
 3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
 
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
+4. Read [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) if you need more information about the Fork and the Clone process
 
 Setup environment variables on your system
 * [Mac/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
