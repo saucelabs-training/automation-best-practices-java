@@ -173,8 +173,7 @@ mvn test -Dtest=SanityTest -X
     * Make sure you are logged into Github
     * Click the fork in the upper right of Github
     * Select your username as the location to fork the repo
-3. In the browser address bar, prepend the Github url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
-    * The resulting url should look as follows:
+3. In your browser address bar, add your Github username to the URL below:
    
       > https://gitpod.io/#https://github.com/USERNAME/automation-best-practices-java
    
