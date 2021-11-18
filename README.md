@@ -82,7 +82,7 @@ This workshop serves 2 purposes:
 
 ## Your TA: Eyal
 
-<img src="./../graphics/josh-grant.jpeg" alt="eyal" width="150"/>
+<img src="./graphics/EyalAvatar.png" alt="eyal" width="150"/>
 
 
 
