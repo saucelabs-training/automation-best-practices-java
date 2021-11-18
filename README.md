@@ -169,17 +169,17 @@ mvn test -Dtest=SanityTest -X
 
 :information_source:&nbsp; Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local Java environment.
 
-1. Sign up for a free [Github account](https://github.com/)
+1. Sign up for a free [GitHub account](https://github.com/)
 2. Fork this repository
-    * Make sure you are logged into Github
-    * Click the fork in the upper right of Github
+    * Make sure you are logged into GitHub
+    * Click the fork in the upper right of GitHub
     * Select your username as the location to fork the repo
-3. In the browser address bar, prepend the Github url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
+3. In the browser address bar, prepend the GitHub url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
     * The resulting url should look as follows:
    
       > https://gitpod.io/#https://github.com/USERNAME/automation-best-practices-java
    
-4. Once the Gitpod.io URL is loaded, you will need to sign in with the Github account you created earlier 
+4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier 
 5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
 
 :information_source:&nbsp; You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
@@ -237,6 +237,6 @@ mvn test -Dtest=SanityTest -X
 
 ## Stay to the end and win a prize!
 
-Stay to the end and 2 lucky people can win this snazzy Back Pack
+Stay to the end and 2 lucky people can win a snazzy Back Pack
 
 
