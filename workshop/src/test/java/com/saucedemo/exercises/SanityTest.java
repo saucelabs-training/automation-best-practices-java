@@ -1,10 +1,10 @@
 package com.saucedemo.exercises;
 
 import com.saucelabs.saucebindings.SauceSession;
-import com.saucelabs.saucebindings.junit4.SauceBaseTest;
+import org.junit.After;
 import org.junit.Test;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.MutableCapabilities;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -15,11 +15,11 @@ import java.util.Map;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
-public class SanityTest extends SauceBaseTest {
-
+public class SanityTest {
+    RemoteWebDriver driver;
     @Test
     public void functionalWorks() {
-        WebDriver driver = new SauceSession().start();
+        driver = new SauceSession().start();
         assertNotNull("Register for your free sauce account https://saucelabs.com/sign-up", driver);
     }
 
@@ -47,9 +47,16 @@ public class SanityTest extends SauceBaseTest {
 
         driver.get("https://saucedemo.com");
 
-        driver.executeScript("/*@visual.init*/", "Simple visual test");
-        driver.executeScript("/*@visual.snapshot*/", "Home");
-        Map<String, Object> response = (Map<String, Object>) driver.executeScript("/*@visual.end*/");
+        ((JavascriptExecutor)driver).executeScript("/*@visual.init*/", "Simple visual test");
+        ((JavascriptExecutor)driver).executeScript("/*@visual.snapshot*/", "Home");
+        Map<String, Object> response = (Map<String, Object>) ((JavascriptExecutor)driver).executeScript("/*@visual.end*/");
         assertNull(response.get("message"));
+    }
+
+    @After
+    public void tearDown() {
+        if(driver != null){
+            driver.quit();
+        }
     }
 }
