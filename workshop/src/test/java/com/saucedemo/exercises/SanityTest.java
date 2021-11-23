@@ -22,6 +22,7 @@ public class SanityTest {
         driver = new SauceSession().start();
         assertNotNull("Register for your free sauce account https://saucelabs.com/sign-up", driver);
     }
+
     @Test
     public void visualWorks() throws MalformedURLException {
         MutableCapabilities capabilities = new MutableCapabilities();

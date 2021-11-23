@@ -41,7 +41,7 @@ This workshop serves 2 purposes:
 
 * Introduction to workshop
 * [Local environment setup](#Local-environment-setup)
-* [Gitpod environment setup (alternative approach to local)](#gitpod-setup)
+  * [If you can't setup local, then use Gitpod](#gitpod-setup)
 * 
 
 ## Requirements
@@ -82,39 +82,50 @@ This workshop serves 2 purposes:
 
 ## Your TA: Eyal
 
-<img src="./../graphics/josh-grant.jpeg" alt="josh" width="150"/>
+<img src="./graphics/EyalAvatar.png" alt="eyal" width="150"/>
 
 
 
 ## Setup
 
-### Sign up for accounts
+### Sign up for account
 
 1. Free [Sauce account](https://saucelabs.com/sign-up)
 2. Request [Demo Secreener account](https://saucelabs.com/demo-request-vt). **!You must request this at least a week before the workshop as it's a manual process to add users.** 
+
+### Get your username and api key
+
+1. Save somewhere your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+2. Save somewhere your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+
 
 ### Local environment setup
 
 Fork then clone the repo
 
-1. Sign up for a free [Github account](https://github.com/)
+1. Sign up for a free [GitHub account](https://github.com/)
 2. Fork this respository
- * Make sure you are logged into Github
- * click the Fork in the upper right of the Github.
+ * Make sure you are logged into GitHub
+ * Click the Fork in the upper right of the GitHub.
 3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
 
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
+4. Read [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) if you need more information about the Fork and the Clone process
+
+Setup environment variables on your system
+* [Mac/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
+* [Windows](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-windows-systems)
 
 Navigate to the directory of where you cloned your repo
 
-`cd YOUR_FORK_DIR/automation-best-practices/testing-for-charity`
+`cd YOUR_FORK_DIR/automation-best-practices/workshop`
 
 Run sanity tests
 
 ```java
-mvn test -Dtest=SanityTests -X
+mvn test -Dtest=SanityTest -X
 ```
 
 <br/>
@@ -139,12 +150,7 @@ mvn test -Dtest=SanityTests -X
         
   </details>
 
-<br/><br/>
-
-> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
-
-
-### Gitpod setup
+</br>
 
 ### Add static code analysis
 
@@ -152,4 +158,85 @@ mvn test -Dtest=SanityTests -X
 * Adding and analyzing takes a bit
 * [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
 
-### ✅👏Environment setup is complete
+### ✅👏Environment setup is complete if tests passed
+
+> If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+
+---
+
+### Gitpod setup
+
+
+:information_source:&nbsp; Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local Java environment.
+
+1. Sign up for a free [GitHub account](https://github.com/)
+2. Fork this repository
+    * Make sure you are logged into GitHub
+    * Click the fork in the upper right of GitHub
+    * Select your username as the location to fork the repo
+3. In the browser address bar, prepend the GitHub url (`https://github.com/USERNAME/automation-best-practices-java`) with `https://gitpod.io/#`
+    * The resulting url should look as follows:
+   
+      > https://gitpod.io/#https://github.com/USERNAME/automation-best-practices-java
+   
+4. Once the Gitpod.io URL is loaded, you will need to sign in with the GitHub account you created earlier 
+5. Once the development environment is loaded, you should see 'Ready to test!' in the Terminal window in the lower portion of the window, run the following commands in that Terminal to set your `SAUCE_USERNAME`, `SAUCE_ACCESS_KEY`, and `SCREENER_API_KEY`:
+
+:information_source:&nbsp; You can get your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+
+:information_source:&nbsp; You can get your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+
+```bash
+eval $(gp env -e SAUCE_USERNAME=<sauce_username>)
+eval $(gp env -e SAUCE_ACCESS_KEY=<sauce_access_key>)
+eval $(gp env -e SCREENER_API_KEY=<screener_api_key>)
+```
+
+> Replace <sauce_username>, <sauce_access_key>, and <screener_api_key> with your credentials
+
+Once you have run those 3 commands, you can run the following commands to test your environment variables:
+
+```bash
+echo $SAUCE_USERNAME
+echo $SAUCE_ACCESS_KEY
+echo $SCREENER_API_KEY
+```
+
+Run sanity tests
+
+```bash
+mvn test -Dtest=SanityTest -X
+```
+
+<br/>
+  <details>
+    <summary>
+      <strong>Click here</strong> to see an example console output.
+    </summary>
+
+
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 54.305 sec
+
+        Results :
+
+        Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+        [INFO] ------------------------------------------------------------------------
+        [INFO] BUILD SUCCESS
+        [INFO] ------------------------------------------------------------------------
+        [INFO] Total time:  56.063 s
+        [INFO] Finished at: 2021-11-03T16:03:20-04:00
+        [INFO] ------------------------------------------------------------------------
+
+  </details>
+
+<br/>
+
+
+### ✅👏Environment setup is complete if tests passed
+
+## Stay to the end and win a prize!
+
+Stay to the end and 2 lucky people can win a snazzy Back Pack
+
+

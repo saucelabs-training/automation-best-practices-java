@@ -18,13 +18,16 @@
             <groupId>com.saucelabs</groupId>
             <artifactId>sauce_bindings</artifactId>
             <version>1.2.0</version>
+            <scope>test</scope>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.0.0</version>
+            <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.saucelabs/saucebindings-junit4 -->
         <dependency>
             <groupId>com.saucelabs</groupId>
             <artifactId>saucebindings-junit4</artifactId>
