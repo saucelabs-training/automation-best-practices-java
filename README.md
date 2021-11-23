@@ -1,48 +1,66 @@
 # automation-best-practices-java
 Automation best practices workshop with Java
 
-![Testing for good](../graphics/testing-good.jpeg)
+![Testing for good](./graphics/best-practices-java.jpeg)
 
 [#testing4good](https://twitter.com/hashtag/Testing4Good)
 
 In this automation best practices workshop you will learn the latest and greatest tools and techniques to drastically improve your testing!
 
-We will focus on a holistic approach of testing front-end and back-end, web and APIs, functional testing, component testing, and many other things in between 😁
+We will focus on a holistic approach of risk mitigation by doing: 
 
-This workshop serves 2 purposes:
+* functional web testing,
+* visual testing,
+* accessibility testing, 
+* and many other things in between 😁
+
+[👉**Register for workshop**](https://info.saucelabs.com/testing-for-good-workshop-java-113021.html)
+
+**This workshop serves 2 purposes**
 
 1. For me to give back to the testing world and help us all upskill 🚀
 2. For us all to help a greater cause than ourselves 🌍
 
-### [ABOUT CHARITY]()
+### [ABOUT CHARITY](https://code.org/)
 
+Code.org® is a nonprofit dedicated to expanding access to computer science in schools and increasing participation by young women and students from other underrepresented groups. Their vision is that every student in every school has the opportunity to learn computer science as part of their core K-12 education. The leading provider of K-12 computer science curriculum in the largest school districts in the United States, Code.org also created the annual Hour of Code campaign, which has engaged more than 15% of all students in the world.
 
+**Working together, we can reduce the digital divide!**
+
+With the Testing for Good event, we're helping to give every student the opportunity to learn computer science — online and in schools where Code.org  will establish permanent courses and train teachers. For every dollar you donate, one child will be introduced to computer science.
+
+To make your donations go even further, Sauce Labs will match up to $2,500.
 
 👇👇👇
 
 [Please donate whatever you feel appropriate.](https://www.gofundme.com/f/testing-for-good-codeorg) 100% of the donations go to the cause.
 
-## 🧠You will learn
+## 🧠You will learn to
 
 * Create a framework for doing comprehensive web testing
 * Create functional browser tests using Selenium
 * Code visual e2e tests using Screener
 * Run in massive parallel (100s of tests in < 5 min)
 * Run in a CI pipeline
+* Automatically get robust test reports with logs + videos
 
 ## 🔧Technologies you will use
 
-1. 
-5. Sauce Labs
-6. Github Actions
-7. 
+1. Sauce Labs
+2. Selenium
+3. Sauce Visual
+4. Github Actions
+5. Java
+6. Maven
 
 ## Table Of Contents
 
 * Introduction to workshop
 * [Local environment setup](#Local-environment-setup)
   * [If you can't setup local, then use Gitpod](#gitpod-setup)
-* 
+* [E2E browser tests](./workshop/docs/E2E-TESTS.MD)
+* [Atomic tests](./workshop/docs/ATOMIC-TESTS.MD)
+
 
 ## Requirements
 
@@ -53,8 +71,8 @@ This workshop serves 2 purposes:
 * Deep understanding of OOP
 * Java 8 installed
 * Java IDE installed
-* Git installed
-* Maven installed
+* [Git](https://git-scm.com/downloads)
+* [Maven installed](https://maven.apache.org/install.html)
 
 ## Key
 
@@ -66,7 +84,7 @@ This workshop serves 2 purposes:
 
 ## Your Instructor: Nikolay Advolodkin
 
-<img src="./../graphics/me-and-mia.jpg" alt="me" width="150"/>
+<img src="./graphics/NikolayAndMia.JPG" alt="me" width="150"/>
 
 - 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
@@ -75,15 +93,21 @@ This workshop serves 2 purposes:
 - 😄 Pronouns: he/him
 - ⚡ Fun fact: I'm a vegan that's super pasionate about saving the planet, saving animals, and helping underpriveleged communities
 - 📫 Follow me for testing and dev training
-  - [Java Testing Newsletter]()
+  - [Java Testing Newsletter](https://ultimateqa.ck.page/selenium-java-tips
+    )
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
   - [Twitter](https://twitter.com/Nikolay_A00)
 
-## Your TA: Eyal
+## Your TAs 
+
+### Eyal Yovel
 
 <img src="./graphics/EyalAvatar.png" alt="eyal" width="150"/>
 
+### Chris Eccleston
+
+<img src="./graphics/chris.jpg" alt="chris" width="150"/>
 
 
 ## Setup
@@ -95,8 +119,9 @@ This workshop serves 2 purposes:
 
 ### Get your username and api key
 
-1. Save somewhere your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
-2. Save somewhere your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+1. Save your Sauce Labs Username and Access Key by going to the [Sauce Labs user settings page](https://app.saucelabs.com/user-settings)
+2. Save your Screener API Key by going to the [API key](https://screener.io/v2/account/api-key) page in your Screener settings
+   1. Need to sign up for [demo account before](https://saucelabs.com/demo-request-vt)
 
 
 ### Local environment setup
@@ -104,7 +129,7 @@ This workshop serves 2 purposes:
 Fork then clone the repo
 
 1. Sign up for a free [GitHub account](https://github.com/)
-2. Fork this respository
+2. [Fork this repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
  * Make sure you are logged into GitHub
  * Click the Fork in the upper right of the GitHub.
 3. Clone your fork of the repository to your machine. Must have [Git installed](https://git-scm.com/downloads)
@@ -112,7 +137,6 @@ Fork then clone the repo
 ```bash
 git clone URL_OF_YOUR_FORK
 ```
-4. Read [here](https://docs.github.com/en/get-started/quickstart/fork-a-repo) if you need more information about the Fork and the Clone process
 
 Setup environment variables on your system
 * [Mac/Linux](https://docs.saucelabs.com/basics/environment-variables/#setting-up-environment-variables-on-macos-and-linux-systems)
@@ -237,6 +261,9 @@ mvn test -Dtest=SanityTest -X
 
 ## Stay to the end and win a prize!
 
-Stay to the end and 2 lucky people can win a snazzy Back Pack
+Stay to the end and 2 lucky people can win a snazzy Back Pack!
+
+<img src="./graphics/large_Sauce_Bkpk_2021.png" alt="me" width="150"/>
+
 
 
