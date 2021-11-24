@@ -84,7 +84,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 
 ## Your Instructor: Nikolay Advolodkin
 
-<img src="./graphics/NikolayAndMia.JPG" alt="me" width="150"/>
+<img src="./graphics/NikolayAndMia.JPG" alt="me" width="200"/>
 
 - 🔭 I’m the founder of [Ultimate QA](https://ultimateqa.com/)
 - 🏢 I’m a Sr Solutions Architect at Sauce Labs
@@ -103,11 +103,11 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 
 ### Eyal Yovel
 
-<img src="./graphics/EyalAvatar.png" alt="eyal" width="150"/>
+<img src="./graphics/EyalAvatar.png" alt="eyal" width="200"/>
 
 ### Chris Eccleston
 
-<img src="./graphics/chris.jpg" alt="chris" width="150"/>
+<img src="./graphics/chris.jpg" alt="chris" width="200"/>
 
 
 ## Setup
@@ -263,7 +263,7 @@ mvn test -Dtest=SanityTest -X
 
 Stay to the end and 2 lucky people can win a snazzy Back Pack!
 
-<img src="./graphics/large_Sauce_Bkpk_2021.png" alt="me" width="150"/>
+<img src="./graphics/large_Sauce_Bkpk_2021.png" alt="me" width="200"/>
 
 
 

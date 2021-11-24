@@ -27,6 +27,8 @@ We can use **functional e2e UI** tests to cover some of the risks
 
 Let's walk through the code
 
+[🧪Let's review test coverage](TEST-STRATEGY.MD)
+
 ---
 
 ## ❓Are these the best tests that we can write

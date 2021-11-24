@@ -66,4 +66,8 @@ public class LoginPage extends AbstractBasePage {
                 wait.until(
                         ExpectedConditions.visibilityOfElementLocated(usernameFieldLocator)).isDisplayed();
     }
+
+    public void visit() {
+        getDriver().navigate().to("https://www.saucedemo.com");
+    }
 }

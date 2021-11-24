@@ -14,11 +14,17 @@ We can usually tell that a test is atomic when:
 1. Atomic tests fail fast
 2. Atomic tests decrease flaky behavior
 3. Atomic checks allow for focused testing
-4. Atomic tests are short and fast (run in milliseconds)
+4. Atomic tests are short and fast
 
 As an aside, this concept is already well understood in unit and integration tests, but UI tests continue to lag behind.
 
 [Read more](https://ultimateqa.com/automated-atomic-tests/)
+
+## The steps to creating atomic tests
+
+1. Find the functionality that you want to test
+2. Isolate/Mock/Fake all irrelevant actions
+3. Test the relevant feature through UI
 
 ## Let's make our tests atomic
 
@@ -27,6 +33,16 @@ As an aside, this concept is already well understood in unit and integration tes
 
 ---
 
-## ❓Questions or concerns about this process
+### ❓Questions or concerns about this process
 
 ---
+
+[🧪Let's review test coverage](TEST-STRATEGY.MD)
+
+## Next, we will use visual tests to:
+
+* Massively increase browser coverage
+* Drastically decrease the code we need to maintain
+* Drastically increase test suite stability
+
+[Visual testing](VISUAL.MD)
