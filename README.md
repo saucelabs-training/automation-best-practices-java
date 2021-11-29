@@ -43,7 +43,6 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 * Create functional browser tests using Selenium
 * Code visual e2e tests using Screener
 * Run in massive parallel (100s of tests in < 5 min)
-* Run in a CI pipeline
 * Automatically get robust test reports with logs + videos
 
 ## 🔧Technologies you will use
