@@ -1,7 +1,6 @@
-# automation-best-practices-java
-Automation best practices workshop with Java
+# Automation best practices w/ Java workshop
 
-![Testing for good](./graphics/best-practices-java.jpeg)
+<img src="./graphics/best-practices-java.jpeg" alt="testing-good" width="400"/>
 
 [#testing4good](https://twitter.com/hashtag/Testing4Good)
 
@@ -38,6 +37,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 ## 🧠You will learn to
 
 * Create a framework for doing comprehensive web testing
+* Use industry-standard best practices
 * Create functional browser tests using Selenium
 * Code visual e2e tests using Screener
 * Run in massive parallel (100s of tests in < 5 min)
@@ -56,10 +56,12 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 ## Table Of Contents
 
 * Introduction to workshop
-* [Local environment setup](#Local-environment-setup)
+* [Local environment setup](#local-environment-setup)
   * [If you can't setup local, then use Gitpod](#gitpod-setup)
 * [E2E browser tests](./workshop/docs/E2E-TESTS.MD)
 * [Atomic tests](./workshop/docs/ATOMIC-TESTS.MD)
+* [Visual e2e tests](./workshop/docs/VISUAL.MD)
+* [Conclusions](./workshop/docs/CONCLUSIONS.MD)
 
 
 ## Requirements
@@ -176,15 +178,18 @@ mvn test -Dtest=SanityTest -X
 
 </br>
 
-### Add static code analysis
-
-* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
-* Adding and analyzing takes a bit
-* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
 
 ### ✅👏Environment setup is complete if tests passed
 
 > If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+
+### Add static code analysis
+
+:information_source: Optional Bonus
+
+* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
+* Adding and analyzing takes a bit
+* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
 
 ---
 
