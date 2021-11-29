@@ -5,23 +5,46 @@ import com.saucedemo.solution.pages.ProductsPage;
 import com.saucedemo.solution.pages.ShoppingCartPage;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Map;
 
 import static org.junit.Assert.assertNull;
 
-public class VisualSolutionTests extends AbstractTestBase {
+@RunWith(Parameterized.class)
+public class VisualDataDrivenSolutionTests extends AbstractTestBase {
     //declare a bunch of variables
     private RemoteWebDriver driver;
 
-    public String browserName = "chrome";
-    public String browserVersion = "latest";
-    public String platform = "Windows 10";
-    public String viewportSize = "1080x720";
+    /*
+     * Configure our data driven parameters
+     * */
+    @Parameterized.Parameter
+    public String browserName;
+    @Parameterized.Parameter(1)
+    public String platform;
+    @Parameterized.Parameter(2)
+    public String browserVersion;
+    @Parameterized.Parameter(3)
+    public String viewportSize;
+    // resolutionName is an identifier of the browser resolution
+    @Parameterized.Parameter(4)
+    public String resolutionName;
+
+    @Parameterized.Parameters()
+    public static Collection<Object[]> crossBrowserData() {
+        return Arrays.asList(new Object[][]{
+                {"Chrome", "Windows 10", "latest", "1080x720", "1080p"},
+                {"Safari", "macOS 10.15", "latest", "1080x720", "1080p"}
+        });
+    }
 
     @Before
     public void setUp() throws Exception {
@@ -57,7 +80,7 @@ public class VisualSolutionTests extends AbstractTestBase {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.visit();
         //provide the test name
-        driver.executeScript("/*@visual.init*/", "1080p");
+        driver.executeScript("/*@visual.init*/", resolutionName);
         //take a visual snapshot of our page
         loginPage.takeSnapshot();
 

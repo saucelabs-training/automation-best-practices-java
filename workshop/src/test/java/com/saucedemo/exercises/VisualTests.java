@@ -1,8 +1,7 @@
-package com.saucedemo.solution;
+package com.saucedemo.exercises;
 
+import com.saucedemo.solution.AbstractTestBase;
 import com.saucedemo.solution.pages.LoginPage;
-import com.saucedemo.solution.pages.ProductsPage;
-import com.saucedemo.solution.pages.ShoppingCartPage;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.MutableCapabilities;
@@ -10,11 +9,8 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.net.URL;
-import java.util.Map;
 
-import static org.junit.Assert.assertNull;
-
-public class VisualSolutionTests extends AbstractTestBase {
+public class VisualTests extends AbstractTestBase {
     //declare a bunch of variables
     private RemoteWebDriver driver;
 
@@ -56,23 +52,38 @@ public class VisualSolutionTests extends AbstractTestBase {
     public void visualFlow() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.visit();
-        //provide the test name
-        driver.executeScript("/*@visual.init*/", "1080p");
-        //take a visual snapshot of our page
-        loginPage.takeSnapshot();
+        /*
+         * Add your code below this
+         * */
 
-        loginPage.login("standard_user");
-        ProductsPage productsPage = new ProductsPage(driver);
-        productsPage.takeSnapshot();
+        //1. uncomment the line below, it starts the test session in screener and takes a test
+        //name as the arg
+        //driver.executeScript("/*@visual.init*/", "1080p");
 
-        productsPage.addAnyProductToCart();
-        ShoppingCartPage cart = new ShoppingCartPage(driver);
-        cart.visit();
-        cart.takeSnapshot();
+        //2. uncomment to take a visual snapshot of our page
+        //look inside of the takeSnapshot() to see how it's implemented
+        //loginPage.takeSnapshot();
 
+        //3. Now we want to capture the snapshot of the products page
+        // use the ProductsPage() to capture it's snapshot
+        //loginPage.login("standard_user");
+        //create new products page
+        // takeSnapshot()
+
+        //4. use the ProductsPage object to addAnyProductToCart();
+        // then visit() to the ShoppingCartPage()
+        // and then takeSnapshot() of the cart
+        //productsPage.addAnyProductToCart();
+
+        /*
+         * ^^^^^^^^ AddYour code above this ^^^^^^^^^
+         * */
+
+        //5. Finally we perform an assertion and check for any visual differences
         //we only need a single assertion per 'init'
         //get the results object and check to see if any visual discrepancies were found
-        Map<String, Object> response = cart.getVisualResults();
-        assertNull(response.get("message"));
+        // uncomment the code below, run your test, it should pass
+//        Map<String, Object> response = cart.getVisualResults();
+//        assertNull(response.get("message"));
     }
 }

@@ -39,7 +39,7 @@ As an aside, this concept is already well understood in unit and integration tes
 
 [🧪Let's review test coverage](TEST-STRATEGY.MD)
 
-## Next, we will use visual tests to:
+## ⏭️Next, we will use visual tests to:
 
 * Massively increase browser coverage
 * Drastically decrease the code we need to maintain

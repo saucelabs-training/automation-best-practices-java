@@ -28,6 +28,7 @@ public abstract class AbstractBasePage {
      * Executes a visual test.
      */
     public final void takeSnapshot() {
+        //a JS command that Screener understands. The arg is the snapshot name
         driver.executeScript("/*@visual.snapshot*/", this.getClass().getSimpleName());
     }
 
