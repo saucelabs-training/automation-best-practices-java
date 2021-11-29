@@ -1,7 +1,8 @@
 # Automated Atomic Tests
 
+<img src="https://media.giphy.com/media/JtLrtaN4VPoKXJRKGB/giphy.gif" alt="not" width="400"/>
+
 No, not the best tests that we can code
-![Not the best](https://media.giphy.com/media/JtLrtaN4VPoKXJRKGB/giphy.gif)
 
 An **automated atomic test (AAT)** is one that tests only a single feature or component. An AAT should form a single irreducible unit. An automated test should not do something like end-to-end automation. 
 
