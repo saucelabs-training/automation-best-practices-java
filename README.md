@@ -63,6 +63,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 * [E2E browser tests](./workshop/docs/E2E-TESTS.MD)
 * [Atomic tests](./workshop/docs/ATOMIC-TESTS.MD)
 * [Visual e2e tests](./workshop/docs/VISUAL.MD)
+* [Parallelization](./workshop/docs/PARALLEL.MD)
 * [Conclusions](./workshop/docs/CONCLUSIONS.MD)
 
 
