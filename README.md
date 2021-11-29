@@ -14,6 +14,7 @@ We will focus on a holistic approach of risk mitigation by doing:
 * and many other things in between 😁
 
 [👉**Register for workshop**](https://info.saucelabs.com/testing-for-good-workshop-java-113021.html)
+[Join Slack](https://join.slack.com/t/testingforgood/shared_invite/zt-zc64x3pc-9ebUXVeXW1fB0JxU1R_9ew)
 
 **This workshop serves 2 purposes**
 
