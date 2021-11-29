@@ -78,13 +78,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 * [Git](https://git-scm.com/downloads)
 * [Maven installed](https://maven.apache.org/install.html)
 
-## Key
 
-💡 this is a tip
-
-🏋️‍♀️ this is an exercise for you to do
-
-❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss
 
 ## Your Instructor: Nikolay Advolodkin
 
@@ -272,5 +266,12 @@ Stay to the end and 2 lucky people can win a snazzy Back Pack!
 
 <img src="./graphics/large_Sauce_Bkpk_2021.png" alt="me" width="200"/>
 
+## Key
+
+💡 this is a tip
+
+🏋️‍♀️ this is an exercise for you to do
+
+❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss
 
 
