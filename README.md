@@ -1,7 +1,6 @@
-# automation-best-practices-java
-Automation best practices workshop with Java
+# Automation best practices w/ Java workshop
 
-![Testing for good](./graphics/best-practices-java.jpeg)
+<img src="./graphics/best-practices-java.jpeg" alt="testing-good" width="400"/>
 
 [#testing4good](https://twitter.com/hashtag/Testing4Good)
 
@@ -15,6 +14,8 @@ We will focus on a holistic approach of risk mitigation by doing:
 * and many other things in between 😁
 
 [👉**Register for workshop**](https://info.saucelabs.com/testing-for-good-workshop-java-113021.html)
+
+[Join Slack](https://join.slack.com/t/testingforgood/shared_invite/zt-zc64x3pc-9ebUXVeXW1fB0JxU1R_9ew)
 
 **This workshop serves 2 purposes**
 
@@ -38,6 +39,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 ## 🧠You will learn to
 
 * Create a framework for doing comprehensive web testing
+* Use industry-standard best practices
 * Create functional browser tests using Selenium
 * Code visual e2e tests using Screener
 * Run in massive parallel (100s of tests in < 5 min)
@@ -56,10 +58,13 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 ## Table Of Contents
 
 * Introduction to workshop
-* [Local environment setup](#Local-environment-setup)
+* [Local environment setup](#local-environment-setup)
   * [If you can't setup local, then use Gitpod](#gitpod-setup)
 * [E2E browser tests](./workshop/docs/E2E-TESTS.MD)
 * [Atomic tests](./workshop/docs/ATOMIC-TESTS.MD)
+* [Visual e2e tests](./workshop/docs/VISUAL.MD)
+* [Parallelization](./workshop/docs/PARALLEL.MD)
+* [Conclusions](./workshop/docs/CONCLUSIONS.MD)
 
 
 ## Requirements
@@ -74,13 +79,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 * [Git](https://git-scm.com/downloads)
 * [Maven installed](https://maven.apache.org/install.html)
 
-## Key
 
-💡 this is a tip
-
-🏋️‍♀️ this is an exercise for you to do
-
-❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss
 
 ## Your Instructor: Nikolay Advolodkin
 
@@ -176,15 +175,18 @@ mvn test -Dtest=SanityTest -X
 
 </br>
 
-### Add static code analysis
-
-* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
-* Adding and analyzing takes a bit
-* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
 
 ### ✅👏Environment setup is complete if tests passed
 
 > If you weren't successful at setting up you local env, then use the [Gitpod approach](#gitpod-setup)👇
+
+### Add static code analysis
+
+:information_source: Optional Bonus
+
+* Follow [Codacy instructions to setup static code analysis for your first repo](https://docs.codacy.com/getting-started/codacy-quickstart/)
+* Adding and analyzing takes a bit
+* [Configure code patterns for the repo](https://docs.codacy.com/repositories-configure/configuring-code-patterns/#pattern-filters)
 
 ---
 
@@ -265,5 +267,12 @@ Stay to the end and 2 lucky people can win a snazzy Back Pack!
 
 <img src="./graphics/large_Sauce_Bkpk_2021.png" alt="me" width="200"/>
 
+## Key
+
+💡 this is a tip
+
+🏋️‍♀️ this is an exercise for you to do
+
+❓ this is a question for us to think and talk about. Try not to scroll beyond this question before we discuss
 
 
