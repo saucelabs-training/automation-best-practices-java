@@ -2,6 +2,7 @@ package com.saucedemo.solution;
 
 import com.saucedemo.solution.pages.*;
 import com.saucelabs.saucebindings.junit4.SauceBaseTest;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.*;
 
@@ -65,12 +66,14 @@ public class E2ESolutionTests extends SauceBaseTest {
         assertTrue(new CheckoutCompletePage(driver).isDisplayed());
     }
     @Test(expected = NoSuchElementException.class)
+    @Ignore("not used")
     public void appRendersError() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.visit();
         assertTrue(driver.findElement(By.cssSelector("usernamefoo")).isDisplayed());
     }
     @Test(expected = NoSuchElementException.class)
+    @Ignore("not used")
     public void sameErrorLessRedundancy() {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.visit();
