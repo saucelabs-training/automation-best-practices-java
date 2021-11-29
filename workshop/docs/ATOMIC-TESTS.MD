@@ -27,6 +27,10 @@ As an aside, this concept is already well understood in unit and integration tes
 2. Isolate/Mock/Fake all irrelevant actions
 3. Test the relevant feature through UI
 
+## 👀How does our app work under the hood?
+
+Let's take a look at how a login and cart functionality works at the code level
+
 ## Let's make our tests atomic
 
 1. 🏋️‍♀️Go to E2ETests.java and follow instructions in `userCanCheckoutAtomic()` to create an atomic test that validates checkout logic
