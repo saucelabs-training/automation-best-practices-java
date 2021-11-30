@@ -4,7 +4,7 @@
 |---|---|---|---|
 | Login page renders  | ✅ | ui/e2e/functional | Selenium, Sauce Labs |
 | Valid user can login | ✅ | ui/e2e/functional | Selenium, Sauce Labs |
-| User can checkout with a product  | ✅ | ui/e2e/functional | Selenium, Sauce Labs |
+| User can checkout with a product  | ✅ | ui/e2e/functional | Selenium, Sauce Labs, Cookie injection, and JS injection |
 | Login page looks as expected on Chrome on most popular resolution  | 🙅‍♂️ |   |   |
 | Products page looks as expected on Chrome on most popular resolution  | 🙅‍♂️ |   |   |
 | Cart page looks as expected on Chrome on most popular resolution  | 🙅‍♂️ |   |   |
