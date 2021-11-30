@@ -107,6 +107,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 
 <img src="./graphics/chris.jpg" alt="chris" width="200"/>
 
+[💻Join Slack #help-desk for tech support](https://join.slack.com/t/testingforgood/shared_invite/zt-zc64x3pc-9ebUXVeXW1fB0JxU1R_9ew)
 
 ## Setup
 
@@ -123,6 +124,8 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
 
 
 ### Local environment setup
+
+[💻Join Slack #help-desk for tech support](https://join.slack.com/t/testingforgood/shared_invite/zt-zc64x3pc-9ebUXVeXW1fB0JxU1R_9ew)
 
 Fork then clone the repo
 
@@ -190,6 +193,8 @@ mvn test -Dtest=SanityTest -X
 ---
 
 ### Gitpod setup
+
+[💻Join Slack #help-desk for tech support](https://join.slack.com/t/testingforgood/shared_invite/zt-zc64x3pc-9ebUXVeXW1fB0JxU1R_9ew)
 
 
 :information_source:&nbsp; Gitpod lets you run an entire Dev environment from a browser! You can use this approach if you don't know how to setup a local Java environment.
