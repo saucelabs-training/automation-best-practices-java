@@ -16,7 +16,11 @@
 3. Please give me [anonymous feedback on the workshop](https://forms.gle/UT1SVtuZDq84XWFR7)
 4. 💃Let's pick 2 winners for backpacks!
 
+<img src="https://media.giphy.com/media/mE5AQ8dqoH4Z2/giphy.gif" alt="backpack" width="400"/>
+
+
 ## Thanks so much for your time and generosity 🙌👏
+
 
 <img src="https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif" alt="thanks" width="400"/>
 
