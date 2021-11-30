@@ -1,5 +1,7 @@
 # Visual Testing
 
+<img src="https://media.giphy.com/media/7FgWADQObRHVioHfVd/giphy.gif" alt="not" width="400"/>
+
 ## 🧠You will learn
 
 ✅ What is visual testing
@@ -48,4 +50,4 @@ Go to `VisualTests.java` and follow instructions to implement visual tests
 
 ✅Visual e2e testing should be part of every web app's test suite
 
-## ⏭️Next, let's make our suite really fast!
+## [⏭️ Next, let's make our suite really fast!](PARALLEL.MD)
