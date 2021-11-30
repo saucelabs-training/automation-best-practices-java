@@ -21,8 +21,7 @@
 
 ## Thanks so much for your time and generosity 🙌👏
 
-
-<img src="https://media.giphy.com/media/KJ1f5iTl4Oo7u/giphy.gif" alt="thanks" width="400"/>
+<img src="https://media.giphy.com/media/3oEjHWXddcCOGZNmFO/giphy.gif" alt="thanks" width="400"/>
 
 
 ## Extra resources
