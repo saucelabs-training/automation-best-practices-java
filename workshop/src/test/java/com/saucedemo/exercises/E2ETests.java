@@ -2,6 +2,7 @@ package com.saucedemo.exercises;
 
 import com.saucedemo.solution.pages.*;
 import com.saucelabs.saucebindings.junit4.SauceBaseTest;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -22,24 +23,36 @@ public class E2ETests extends SauceBaseTest {
     @Test()
     public void loginWorks() {
         LoginPage loginPage = new LoginPage(driver);
-        //Add your code below this
+        /*
+         * Add your code below this
+         * */
 
 
 
-        //AddYour code above this
+        /*
+         * ^^^^^^^^ AddYour code above this ^^^^^^^^^
+         * */
         assertTrue(new ProductsPage(driver).isDisplayed());
     }
     @Test()
     public void userCanCheckout() {
-        //Add your code below this
+        /*
+         * Add your code below this
+         * */
 
 
 
-        //AddYour code above this
+        /*
+         * ^^^^^^^^ AddYour code above this ^^^^^^^^^
+         * */
         assertTrue(new CheckoutCompletePage(driver).isDisplayed());
     }
 
+    /*
+    * Don't do or look at the test below until the atomic tests section
+    * */
     @Test()
+    @Ignore("Ignoring until atomic tests section")
     public void userCanCheckoutAtomic() {
         /*
         * Add your code below this
@@ -98,20 +111,5 @@ public class E2ETests extends SauceBaseTest {
         * ^^^^^^^^ AddYour code above this ^^^^^^^^^
         * */
         assertTrue(new CheckoutCompletePage(driver).isDisplayed());
-    }
-
-    @Test(expected = NoSuchElementException.class)
-    public void appRendersError() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.visit();
-        assertTrue(driver.findElement(By.cssSelector("usernamefoo")).isDisplayed());
-    }
-    @Test(expected = NoSuchElementException.class)
-    public void sameErrorLessRedundancy() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.visit();
-        //attempt to login here
-        driver.findElement(By.cssSelector("usernamefoo")).sendKeys("standard_user");
-        //will continue to login, unless there is an error
     }
 }
