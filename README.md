@@ -95,7 +95,7 @@ To make your donations go even further, Sauce Labs will match up to $2,500.
     )
   - [Youtube](https://youtube.com/ultimateqa)
   - [LinkedIn](https://www.linkedin.com/in/nikolayadvolodkin/)
-  - [Twitter](https://twitter.com/Nikolay_A00)
+  - [Twitter](https://twitter.com/intent/follow?screen_name=nikolay_a00&region=follow_link)
 
 ## Your TAs 
 
